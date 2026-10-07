@@ -1,0 +1,1 @@
+const ts=()=>new Date().toISOString().slice(11,19);module.exports={info:(...a)=>console.log(`[${ts()}] ▸`,...a),ok:(...a)=>console.log(`[${ts()}] ✓`,...a),warn:(...a)=>console.warn(`[${ts()}] ⚠`,...a),error:(...a)=>console.error(`[${ts()}] ✗`,...a),dim:(...a)=>console.log(`[${ts()}]  `,...a)};

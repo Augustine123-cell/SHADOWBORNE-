@@ -1,0 +1,1 @@
+const db=require("../../db"),{reply}=require("./_helpers");exports.run=c=>{const s=db.getStats();return reply(c,`📊 STATS\nChecks: ${s.checks}\nBanned: ${s.banned}\nSafe: ${s.safe}`)};

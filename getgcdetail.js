@@ -1,0 +1,1 @@
+const{reply}=require("./_helpers");exports.run=c=>reply(c,"ℹ️ Group detail uses only data available to the connected session.");

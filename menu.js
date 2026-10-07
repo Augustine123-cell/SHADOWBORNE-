@@ -1,0 +1,1 @@
+const{menu}=require("../../format"),{reply}=require("./_helpers");exports.run=c=>reply(c,menu(c.senderNumber));

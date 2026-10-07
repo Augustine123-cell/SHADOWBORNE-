@@ -1,0 +1,1 @@
+const axios=require("axios"),config=require("../config");async function age(id){if(!config.osint.ageApiUrl)throw new Error("AGE_API_URL is not configured.");return(await axios.get(config.osint.ageApiUrl,{params:{id:String(id)},timeout:config.api.timeout})).data}module.exports={age};

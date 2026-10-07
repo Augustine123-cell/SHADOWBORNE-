@@ -1,0 +1,1 @@
+const{listSessions}=require("../socket"),{reply}=require("./_helpers");exports.run=c=>reply(c,`🔗 Active sessions: ${listSessions().length}\n${listSessions().map(x=>`• +${x}`).join("\n")||"None"}`);

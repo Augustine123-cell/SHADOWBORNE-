@@ -1,0 +1,1 @@
+const{reply}=require("./_helpers");exports.run=c=>reply(c,"ℹ️ Telegram group/channel lookup requires an authorized provider.");

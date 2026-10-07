@@ -1,0 +1,1 @@
+const db=require("../../db"),{reply,owner}=require("./_helpers");exports.run=c=>{owner(c);return reply(c,db.listBanned().map(x=>`+${x.number} • ${x.daysLeft} • ${x.reason}`).join("\n")||"No locally banned users.")};

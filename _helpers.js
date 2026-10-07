@@ -1,0 +1,1 @@
+async function reply(c,t){return c.sock.sendMessage(c.from,{text:t},{quoted:c.m})}function owner(c){if(!c.isOwner)throw new Error("Owner-only command.")}function sudo(c){if(!c.isOwner&&!c.isSudo)throw new Error("Sudo-only command.")}module.exports={reply,owner,sudo};

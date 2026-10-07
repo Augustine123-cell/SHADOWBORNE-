@@ -1,0 +1,1 @@
+const{reply,owner}=require("./_helpers");exports.run=async c=>{owner(c);await reply(c,"♻️ Restarting…");setTimeout(()=>process.exit(0),500)};

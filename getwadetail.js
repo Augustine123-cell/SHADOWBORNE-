@@ -1,0 +1,1 @@
+const{reply}=require("./_helpers");exports.run=c=>reply(c,"ℹ️ WhatsApp detail lookup requires a configured authorized provider.");

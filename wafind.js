@@ -1,0 +1,1 @@
+const{reply}=require("./_helpers");exports.run=c=>reply(c,"🔎 WA FIND is disabled until an authorized provider is configured.");

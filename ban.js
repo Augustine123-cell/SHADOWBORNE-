@@ -1,0 +1,1 @@
+const db=require("../../db"),{reply,owner}=require("./_helpers");exports.run=c=>{owner(c);const[n,d="0",...r]=c.args;if(!n)throw new Error("Usage: .ban <number> <days|0> [reason]");db.banUser(n,Number(d)||0,r.join(" ")||"No reason",c.senderNumber);return reply(c,"🚫 Local ban added to User.")};

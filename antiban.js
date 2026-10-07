@@ -1,0 +1,1 @@
+const db=require("../../db"),{reply,sudo}=require("./_helpers");exports.run=c=>{sudo(c);const v=(c.args[0]||"").toLowerCase();if(!["on","off"].includes(v))return reply(c,`🛡 Antiban: ${db.getAntiban()?"ON":"OFF"}`);db.setAntiban(v==="on");return reply(c,`🛡 Antiban ${v.toUpperCase()}.`)};

@@ -1,0 +1,1 @@
+const{reply}=require("./_helpers");exports.run=c=>reply(c,`🆔 Chat: ${c.from}\n👤 Sender: ${c.sender}\n📱 Number: +${c.senderNumber}`);

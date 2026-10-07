@@ -1,0 +1,1 @@
+const db=require("../../db"),{reply,owner}=require("./_helpers");exports.run=c=>{owner(c);const n=c.m.message?.extendedTextMessage?.contextInfo?.participant?.split("@")[0]||c.args[0];if(!n)throw new Error("Reply to a user or provide a number.");db.addSudo(n);return reply(c,"⚔️ Sudo added.")};

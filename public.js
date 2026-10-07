@@ -1,0 +1,1 @@
+const db=require("../../db"),{reply,sudo}=require("./_helpers");exports.run=c=>{sudo(c);db.setMode("public");return reply(c,"🌐 Public mode enabled.")};

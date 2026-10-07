@@ -1,0 +1,1 @@
+const{checkBan,normalizePhone}=require("../../api"),{banCard}=require("../../format"),db=require("../../db"),{reply}=require("./_helpers");exports.run=async c=>{const p=normalizePhone(c.args[0]);const r=await checkBan(p);db.bumpStats(r.banned);return reply(c,banCard(p,r,c.senderNumber))};

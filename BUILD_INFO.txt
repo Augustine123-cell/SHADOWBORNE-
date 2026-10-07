@@ -1,0 +1,3 @@
+SHADOWBORNE v5.0.0
+Integrated: clan scanner, five-mode router, service monitoring, URL watch, health dashboard, API laboratory.
+Baseline preserved from v4.0.0; existing command modules retained.

@@ -1,0 +1,1 @@
+const{reply}=require("./_helpers");exports.run=c=>reply(c,`⏱ UPTIME\n${Math.floor(process.uptime())} seconds`);

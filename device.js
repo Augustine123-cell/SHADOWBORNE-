@@ -1,0 +1,1 @@
+const os=require("os"),{deviceCard}=require("../../format"),{reply}=require("./_helpers");exports.run=c=>reply(c,deviceCard({name:"SHADOWBORNE",platform:process.platform,version:process.version,os:`${os.type()} ${os.release()}`},c.senderNumber));

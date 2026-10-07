@@ -1,0 +1,8 @@
+node_modules/
+.env
+sessions/
+data/*
+!data/clans.json
+logs/
+*.log
+.replit.user

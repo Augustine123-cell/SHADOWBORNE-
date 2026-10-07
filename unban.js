@@ -1,0 +1,1 @@
+const db=require("../../db"),{reply,owner}=require("./_helpers");exports.run=c=>{owner(c);if(!c.args[0])throw new Error("Usage: .unban <number>");db.unbanUser(c.args[0]);return reply(c,"✅ Local ban removed.")};

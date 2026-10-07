@@ -1,0 +1,1 @@
+const config=require("../../config"),{reply}=require("./_helpers");exports.run=c=>reply(c,`🛠 SUPPORT\nContact: +${config.owner.number}`);

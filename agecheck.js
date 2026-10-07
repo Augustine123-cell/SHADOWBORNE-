@@ -1,0 +1,1 @@
+const{age}=require("../../osint/tgage"),{reply}=require("./_helpers");exports.run=async c=>{if(!c.args[0])throw new Error("Usage: .agecheck <id>");return reply(c,JSON.stringify(await age(c.args[0]),null,2).slice(0,3500))};
